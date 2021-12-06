@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace InAndOut2.Models
 {
@@ -11,6 +13,7 @@ namespace InAndOut2.Models
 
         public string Lender { get; set; }
 
+        [DisplayName("Item name")]
         public string ItemName { get; set; }
 
 
